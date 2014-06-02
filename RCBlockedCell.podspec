@@ -1,37 +1,18 @@
-#
-# Be sure to run `pod lib lint NAME.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
 Pod::Spec.new do |s|
   s.name             = "RCBlockedCell"
   s.version          = "0.1.0"
-  s.summary          = "A short description of RCBlockedCell."
+  s.summary          = "A class to help you group the cell definition and select actions in one place."
   s.description      = <<-DESC
-                       An optional longer description of RCBlockedCell
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       This consists of subclasses of UITableViewCell and UITableViewController that will help you group the definition of the cells and what to do when they are selected with blocks. With the classes, you will only need to implement tableView:cellForRowAtIndexPath: and no longer need to implement tableView:didSelectRowAtIndexPath:
                        DESC
-  s.homepage         = "http://EXAMPLE/NAME"
-  s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "http://blog.radj.me/RCBlockedCell-putting-definition-action-together-using-blocks"
   s.license          = 'MIT'
-  s.author           = { "Radj" => "roger.casalinas@truste.com" }
-  s.source           = { :git => "http://EXAMPLE/NAME.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/EXAMPLE'
+  s.author           = { "Radj" => "iamradj@gmail.com" }
+  s.source           = { :git => "https://github.com/radj/RCBlockedCell.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/radj'
 
-  # s.platform     = :ios, '5.0'
-  # s.ios.deployment_target = '5.0'
-  # s.osx.deployment_target = '10.7'
+  s.platform = :ios
   s.requires_arc = true
-
-  s.source_files = 'Classes'
-  s.resources = 'Assets/*.png'
-
-  s.ios.exclude_files = 'Classes/osx'
-  s.osx.exclude_files = 'Classes/ios'
-  # s.public_header_files = 'Classes/**/*.h'
-  # s.frameworks = 'SomeFramework', 'AnotherFramework'
-  # s.dependency 'JSONKit', '~> 1.4'
+  s.source_files = 'RCBlockedCell/RCBlockedCell.{h,m}', 'RCBlockedCell/RCBlockedTableController.{h,m}'
+  s.frameworks = 'UIKit'
 end
