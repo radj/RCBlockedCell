@@ -6,9 +6,12 @@
 
 ## Usage
 
-To run the example project; clone the repo, and run `pod install` from the Example directory first.
+For more info about this project, read this [blog post](http://blog.radj.me/RCBlockedCell-putting-definition-action-together-using-blocks).
+
+Run the XCode project under `Example`. You can use RCBlockedCell alone and for convenience, you might also want to subclass RCBlockedTableController.
 
 ## Requirements
+None
 
 ## Installation
 
@@ -19,7 +22,7 @@ it, simply add the following line to your Podfile:
 
 ## Author
 
-Radj, roger.casalinas@truste.com
+Radj, iamradj@gmail.com
 
 ## License
 
